@@ -1,6 +1,9 @@
 body {
     width: 280px;
 }
+body {
+    border: 1px solid white;
+}
 
 .container {
     background: #141e24;
@@ -9,11 +12,11 @@ body {
 }
 
 #head {
-    color: #ffffff;
+    color: #75b0be;
     font-size: 1.5rem;
 
     font: Open Sans;
-    font-weight: bold;
+    font-weight:800;
 }
 
 #clock {

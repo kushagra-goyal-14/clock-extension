@@ -6,7 +6,7 @@ function bindEvents() {
     let hr = today.getHours();
     let min = today.getMinutes();
     let sec = today.getSeconds();
-    ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+    let ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
     hr = (hr == 0) ? 12 : hr;
     hr = (hr > 12) ? hr - 12 : hr;
     //Add a zero in front of numbers<10
@@ -14,6 +14,12 @@ function bindEvents() {
     min = checkTime(min);
     sec = checkTime(sec);
     document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+    if (ap == "<span>AM</span>") {
+        document.getElementById("head").innerText = "Good Morning";
+    }
+    else {
+        document.getElementById("head").innerText = "Good Night";
+    }
     let time = setTimeout(function () { bindEvents() }, 500);
 }
 function checkTime(i) {

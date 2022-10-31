@@ -1,0 +1,36 @@
+body {
+    width: 280px;
+}
+
+.container {
+    background: #141e24;
+    height: 140px;
+    text-align: center;
+}
+
+#head {
+    color: #ffffff;
+    font-size: 1.5rem;
+
+    font: Open Sans;
+    font-weight: bold;
+}
+
+#clock {
+    color: #f57150;
+    font-size: 2.5rem;
+
+    font: Open Sans;
+    font-weight: bold;
+}
+
+.back {
+    color: #316e7d;
+    font-size: 1rem;
+
+    font: Open Sans;
+}
+
+#icon {
+    color: white;
+}

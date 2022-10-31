@@ -1,0 +1,16 @@
+{
+    "name": "Clock",
+    "description": "This extension shows current Time",
+    "version": "1.0",
+    "manifest_version": 3,
+    "author": "Kushagra Goyal",
+    "action": {
+        "default_icon": {
+            "16": "./icon.png",
+            "24": "./icon.png",
+            "32": "./icon.png"
+        },
+        "default_title": "Click To Show Time",
+        "default_popup": "popup.html"
+    }
+}

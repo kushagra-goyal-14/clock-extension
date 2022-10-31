@@ -14,12 +14,6 @@ function bindEvents() {
     min = checkTime(min);
     sec = checkTime(sec);
     document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
-    if (ap == "<span>AM</span>") {
-        document.getElementById("head").innerText = "Good Morning";
-    }
-    else {
-        document.getElementById("head").innerText = "Good Night";
-    }
     let time = setTimeout(function () { bindEvents() }, 500);
 }
 function checkTime(i) {
